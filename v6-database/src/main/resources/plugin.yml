@@ -1,0 +1,14 @@
+name: DatabasePlugin
+version: '1.0.0'
+main: com.example.database.Main
+api-version: '1.21'
+author: endhdydy
+description: SQLite 데이터베이스 연동 예제
+
+commands:
+  db:
+    description: DatabasePlugin 명령어
+    usage: /db <stats|top|reset>
+  playtime:
+    description: 플레이타임을 확인합니다
+    usage: /playtime

@@ -1,0 +1,5 @@
+# AdvancedPlugin 설정
+# /warpadmin create <name> 명령어로 워프를 추가하면
+# 이 파일에 자동으로 저장됩니다.
+
+warps: {}
