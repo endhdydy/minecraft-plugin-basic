@@ -1,0 +1,40 @@
+name: AdvancedPlugin
+version: '1.0.0'
+main: com.example.advanced.Main
+api-version: '1.21'
+author: endhdydy
+description: 고급 플러그인 종합 예제
+
+commands:
+  warp:
+    description: 워프 기능
+    usage: /warp <name>
+    aliases: [워프]
+  warpadmin:
+    description: 워프 관리
+    usage: /warpadmin <create|remove|list> <name>
+    permission: advanced.admin
+  combatlog:
+    description: 전투 상태 확인
+    usage: /combatlog
+  customcraft:
+    description: 커스텀 조합법 확인
+    usage: /customcraft
+  mute:
+    description: 플레이어 뮤트
+    usage: /mute <player>
+    permission: advanced.mod
+  unmute:
+    description: 뮤트 해제
+    usage: /unmute <player>
+    permission: advanced.mod
+  msg:
+    description: 귓속말
+    usage: /msg <player> <message>
+    aliases: [귓, whisper, tell]
+
+permissions:
+  advanced.admin:
+    default: op
+  advanced.mod:
+    default: op

@@ -1,0 +1,14 @@
+name: BasicPlugin
+version: '1.0.0'
+main: com.example.basic.Main
+api-version: '1.21'
+author: endhdydy
+description: 기본적인 마인크래프트 플러그인 예제
+
+commands:
+  hello:
+    description: 인사 메시지를 출력합니다
+    usage: /hello
+  ping:
+    description: 서버 응답 시간을 확인합니다
+    usage: /ping

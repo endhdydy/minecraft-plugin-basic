@@ -1,0 +1,6 @@
+name: EventsPlugin
+version: '1.0.0'
+main: com.example.events.Main
+api-version: '1.21'
+author: endhdydy
+description: 이벤트 처리 예제

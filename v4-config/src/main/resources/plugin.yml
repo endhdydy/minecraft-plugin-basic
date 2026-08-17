@@ -1,0 +1,21 @@
+name: ConfigPlugin
+version: '1.0.0'
+main: com.example.config.Main
+api-version: '1.21'
+author: endhdydy
+description: 설정 파일(Config) 처리 예제
+
+commands:
+  configplugin:
+    description: ConfigPlugin 명령어
+    aliases: [cp, configp]
+    permission: configplugin.admin
+  setspawn:
+    description: 현재 위치를 스폰으로 설정
+    usage: /setspawn
+    permission: configplugin.admin
+
+permissions:
+  configplugin.admin:
+    description: 관리자 명령어
+    default: op

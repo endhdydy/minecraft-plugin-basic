@@ -1,0 +1,33 @@
+# 설정 파일
+welcome-message: "&a&l서버에 오신 걸 환영합니다!"
+join-title: "&6&l환영합니다!"
+join-subtitle: "&f즐거운 게임 되세요!"
+
+# 게임플레이 설정
+gameplay:
+  fall-damage-multiplier: 0.5
+  hunger-drain-multiplier: 0.7
+  explosion-block-destruction: 0.5
+  disable-weather: false
+
+# 스폰 설정
+spawn:
+  enabled: true
+  world: world
+  x: 0.0
+  y: 64.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0
+
+# 보호 설정
+protection:
+  prevent-explosion-griefing: true
+  prevent-fire-spread: true
+  prevent-leaf-decay: false
+
+# 메시지
+messages:
+  no-permission: "&c권한이 없습니다!"
+  player-not-found: "&c플레이어를 찾을 수 없습니다."
+  reloaded: "&a설정이 리로드되었습니다."

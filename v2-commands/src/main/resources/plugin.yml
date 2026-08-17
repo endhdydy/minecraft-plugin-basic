@@ -1,0 +1,42 @@
+name: CommandsPlugin
+version: '1.0.0'
+main: com.example.commands.Main
+api-version: '1.21'
+author: endhdydy
+description: 명령어 처리 심화 예제
+
+commands:
+  gm:
+    description: 게임모드를 변경합니다
+    usage: /gm <0|1|2|3>
+    permission: commandsplugin.gm
+  fly:
+    description: 비행 모드를 토글합니다
+    usage: /fly
+    permission: commandsplugin.fly
+  heal:
+    description: 체력과 배고픔을 회복합니다
+    usage: /heal [player]
+    permission: commandsplugin.heal
+  feed:
+    description: 배고픔을 회복합니다
+    usage: /feed [player]
+    permission: commandsplugin.feed
+  spawn:
+    description: 스폰으로 이동합니다
+    usage: /spawn
+  god:
+    description: 무적 모드를 토글합니다
+    usage: /god
+    permission: commandsplugin.god
+
+permissions:
+  commandsplugin.*:
+    description: 모든 권한
+    default: op
+    children:
+      commandsplugin.gm: true
+      commandsplugin.fly: true
+      commandsplugin.heal: true
+      commandsplugin.feed: true
+      commandsplugin.god: true
